@@ -1,0 +1,78 @@
+.dash_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* height: 300px; */
+    width: 80%;
+    margin: 40px auto;
+}
+
+.dash_container a {
+    text-decoration: none;
+    
+}
+
+.dash_container a:hover {
+    box-shadow: 0px 0px 10px 2px #2E5266;
+    border-radius: 15px;
+    height: 180px;
+    width: 200px;
+}
+
+.today, .new, .expiring, .total {
+    height: 180px;
+    width: 200px;
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: auto 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 2px #D8DAD3;
+    background-color: #292929;
+}
+
+.today h3 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+    margin: auto;
+    color: #7DBDBE;
+}
+
+.today h2 {
+    font-family: 'Big Shoulders Text', cursive;
+    font-weight: bolder;
+    font-size: 30px;
+    margin: auto;
+    color: #D8DAD3;
+    
+}
+
+#expNum, #newNumber, #totNum {
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    font-size: 60px;
+    margin: 0 auto;
+    color: #67AD7D;
+}
+
+.new h3 {
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 24px;
+    margin: 0 auto;
+    color: #D8DAD3;
+}
+
+.expiring h3 {
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 24px;
+    margin: 0 20px;
+    color: #D8DAD3; 
+}
+
+.total h3 {
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 24px;
+    margin: 0 auto;
+    color: #D8DAD3; 
+}

@@ -1,0 +1,47 @@
+.container {
+    /* background: linear-gradient(180deg, rgba(61,61,61,1) 50%, rgba(31,31,31,1) 100%); */
+    display: flex;
+    
+}
+
+.body {
+    background: linear-gradient(180deg, rgba(61,61,61,1) 50%, rgba(31,31,31,1) 100%);
+    height: 100%;
+}
+
+#catdoglogo {
+    height: 80px;
+    width: 120px;
+    margin: 5px 10px 0 20px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.header {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 90px;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    margin: auto 20px 10px 20px;
+}
+
+.nav a {
+    margin: 5px;
+}
+
+.body {
+    background: linear-gradient(180deg, rgba(61,61,61,1) 50%, rgba(31,31,31,1) 100%);
+    height: 100vh;
+    width: 100vw;
+}
+

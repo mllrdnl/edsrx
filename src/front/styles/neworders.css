@@ -1,0 +1,95 @@
+.newOrderTable {
+    margin: 30px 150px 50px 150px;
+}
+
+h1 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 35px;
+    margin-bottom: 15px;
+    font-weight: bolder;
+    color: #4F97B6;
+    text-align: left;
+}
+
+.table {
+    width: 80%;
+    table-layout: fixed;
+}
+
+.tableHeader {
+    background-color: rgba(255,255,255,0.3);
+    
+}
+
+.tableContent {
+    /* height: 300px; */
+    overflow-x: auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255,255,255,0.3);
+    
+}
+
+th {
+    padding: 20px 20px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 20px 18px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+    background-color: #292929;
+  }
+
+  .date {
+      width: 6rem;
+      
+  }
+
+  .pet {
+      width: 8rem;
+  }
+
+  .last {
+      width: 8rem;
+  }
+
+  .prod {
+      width: 18rem;
+  }
+
+  .length {
+      width: 8rem;
+  }
+
+  .dvm {
+      width: 12rem;
+  }
+
+  .approve {
+      width: 14rem;
+  }
+
+  .approve i {
+      padding: 0 10px;
+  }
+
+  .approve a {
+      color: #D8DAD3;
+  }
+
+  .approve a:hover {
+      color: #67AD7D;
+  }
+
+  .approve a:active {
+      color: #97D189;
+  }
