@@ -2,6 +2,8 @@ import React from 'react';
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../store/auth";
 
+import '../styles/login.css';
+
 export function LoginUser() {
     const [email, setEmail] = React.useState("");
 	const [password, setPassword] = React.useState("");
@@ -17,11 +19,12 @@ export function LoginUser() {
 
 	return (
 		<div className="container">
-			<h3>Login User</h3>
-			{auth.authError && <div className="alert alert-danger">Authentication Error</div>}
+			
+			{/* {auth.authError && <div className="alert alert-danger">Authentication Error</div>} */}
 
-			<div className="form-floating mb-3">
-				<label>Email address</label>
+			<div className="loginform">
+			<h3>Clinic Login</h3>
+				<label>EMAIL</label>
 				<input
 					value={email}
 					onChange={ev => setEmail(ev.target.value)}
@@ -29,9 +32,8 @@ export function LoginUser() {
 					className="form-control"
 					placeholder="name@example.com"
 				/>
-			</div>
-			<div className="form-floating">
-				<label>Password</label>
+			
+				<label>PASSWORD</label>
 				<input
 					value={password}
 					onChange={ev => setPassword(ev.target.value)}
@@ -39,11 +41,12 @@ export function LoginUser() {
 					className="form-control"
 					placeholder="Enter your password here"
 				/>
-			</div>
+			
+				<button className="loginButton" onClick={() => auth.loginUser(email, password)}><strong>
+					LOGIN</strong>
+				</button>
 
-			<button className="loginButton" onClick={() => auth.loginUser(email, password)}>
-				Login
-			</button>
+			</div>
 		</div>
 	);
 }

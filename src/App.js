@@ -4,7 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Dashboard } from './front/pages/dashboard';
 
-function App() {
+export function App() {
   return (
     <div className="App">
       {/* <h1>Login Page</h1> */}
@@ -13,4 +13,4 @@ function App() {
   );
 }
 
-export default App;
+

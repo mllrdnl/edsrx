@@ -1,14 +1,14 @@
 import React, {Fragment} from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ScrollToTop from "./Components/ScrollToTop";
+import ScrollToTop from "./front/components/ScrollToTop";
 
 import { App } from "./App";
 
-import { RegisterUser } from "./Components/register";
+// import { RegisterUser } from "./Components/register";
 import { LoginUser } from "./front/pages/LoginUser";
 
-// import { SecurePage } from "./Components/SecurePage";
-import { SecuredRoute } from "./Components/SecuredRoute";
+// import { SecurePage } from "./components/SecurePage";
+import { SecuredRoute } from "./front/components/SecuredRoute";
 
 function Layout() {
     const basename = process.env.BASENAME || "";
@@ -23,8 +23,8 @@ function Layout() {
                             <Route exact path="/" element={<App/>}/>                           
                         </Route>
 
-                        <Route exact path="/register" element={<RegisterUser/>}>
-                        </Route>
+                        {/* <Route exact path="/register" element={<RegisterUser/>}>
+                        </Route> */}
 
                         <Route exact path="/login" element={<LoginUser/>}>
                         </Route>
