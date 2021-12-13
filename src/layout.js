@@ -9,6 +9,7 @@ import { LoginUser } from "./front/pages/LoginUser";
 
 // import { SecurePage } from "./components/SecurePage";
 import { SecuredRoute } from "./front/components/SecuredRoute";
+import { NewRx } from "./front/pages/newrx";
 
 function Layout() {
     const basename = process.env.BASENAME || "";
@@ -27,6 +28,9 @@ function Layout() {
                         </Route> */}
 
                         <Route exact path="/login" element={<LoginUser/>}>
+                        </Route>
+
+                        <Route exact path="/newrx" element={<NewRx/>}>
                         </Route>
 
                         {/* <Route>

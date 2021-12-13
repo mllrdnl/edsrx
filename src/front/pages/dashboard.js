@@ -18,11 +18,11 @@ export const Dashboard = () => {
                     <h2>EDS Rx</h2>
                 </div>
                 <div className="nav">
-                    <a href="/">Home</a>
-                    <a href="/">New Rx</a>
-                    <a href="/">Clients</a>
-                    <a href="/">Settings</a>
-                    <a href="/">Log Out</a>
+                    <a href="/">HOME</a>
+                    <a href="/">NEW Rx</a>
+                    <a href="/">CLIENTS</a>
+                    <a href="/">SETTINGS</a>
+                    <a href="/">LOG OUT</a>
                 </div>
             </div>
 

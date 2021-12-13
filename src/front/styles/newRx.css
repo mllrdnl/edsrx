@@ -1,0 +1,90 @@
+.newRxcontainer {
+    background: linear-gradient(180deg, rgba(61,61,61,1) 50%, rgba(31,31,31,1) 100%);
+}
+
+.newRxheader {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 90px;
+    width: 100%;
+}
+
+.newRxbody h3 {
+    margin-left: 20px;
+    display: flex;
+}
+
+.client_info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 800px;
+    margin: 20px auto;
+}
+
+.client_info h4 {
+    margin-right: 550px;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-family: 'Lato', sans-serif;
+    color: #4F97B6;
+}
+
+.labelnfield {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+.client_info input {
+    width: 300px;
+    height: 30px;
+    margin-left: 0px;
+}
+
+.labelnfield_species {
+    display: flex;
+    flex-direction: row; 
+}
+
+.labelnfield_species input {
+    width: 25px;
+    height: 30px;
+    margin: auto 10px auto 0;
+}
+
+.labelnfield_species label {
+    margin: auto 30px auto 0;
+}
+
+.addapet label{
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.addapet input {
+    width: 30px;
+    height: 24px;
+    margin: auto;
+}
+
+.addapet {
+    width: 800px;
+    margin: 10px auto;
+}
+
+.send {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+}
+
+#savensend {
+    height: 40px;
+    width: 400px;
+    margin: 20px auto;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
