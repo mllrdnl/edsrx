@@ -76,6 +76,8 @@ td {
 
   .approve {
       width: 14rem;
+      display: flex;
+      flex-direction: row;
   }
 
   .approve i {
@@ -132,12 +134,27 @@ td {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    color: #A6D1D2;
 }
 
 .orderdetails {
     display: flex;
     flex-direction: column;
     justify-content: start;
+}
+
+.orderdetails h4 {
+    font-size: 22px;
+    margin-bottom: 0;
+    
+}
+
+.orderdetails li {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    margin-top: 4px;
+    color: #A6D1D2;
 }
 
 .notes {
@@ -164,3 +181,38 @@ td {
     margin: auto 10px;
     box-shadow: none;
 }
+
+.rxlength_info {
+    display: flex;
+    flex-direction: row;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.options input {
+    margin-left: 20px;
+}
+
+#numbers {
+    width: 200px;
+}
+
+.options label {
+    margin-right: 220px;
+    margin-left: 10px;
+}
+
+#editbutton {
+    height: 40px;
+    width: 46px;
+    font-size: 14px;
+    padding: 0;
+    box-shadow: none;
+    margin: 2px;
+    text-align: center;
+}
+
+

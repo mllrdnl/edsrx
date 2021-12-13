@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { Link, useHistory, useParams } from "react-router-dom";
 
 import '../styles/neworders.css';
+import { ToggleSwitch } from './Toggle';
 
 // import { EditModal } from './EditModal';
 
@@ -35,20 +36,31 @@ const EditModal = ({ onRequestClose }) => {
                     <h4>Order Placed 12/1/2021</h4>
                 </div>
                 <div className="orderdetails">
-                    <h5>Order Details</h5>
+                    <h4>Order Details</h4>
                     <ul>
-                        <li>Plant-Based </li>
-                            <div className="toggle-wrapper">
-                                <div className="toggle-checkcross">
-                                    <input id="checkcross" type="checkbox" />
-                                    <label className="toggle-item" for="checkcross">
-                                    <div className="check"></div>
-                                    </label>
-                                </div>
-                            </div>
-                        <li>Sweet Potato Treats</li>
-                        <li>Turkey Jerky Treats</li>
+                        <li>Plant-Based  <ToggleSwitch /></li>
+                        <li>Sweet Potato Treats
+                        <ToggleSwitch /></li>
+                        <li>Turkey Jerky Treats <ToggleSwitch /></li>
                     </ul>
+                </div>
+
+                <div className="rxlength">
+                    <div className="rxlength_title">
+                    <h4>Rx Length</h4>
+                    </div>
+                    <div className="rxlength_info">
+                    <label for="number"></label>
+                    <input type="number" id="number"></input>
+                    <div className="options">
+                    <input type="radio" id="weeks" name="length" value="weeks" checked></input>
+                    <label for="weeks">Weeks</label>
+                    <input type="radio" id="months" name="length" value="months"></input>
+                    <label for="months">Months</label>
+                    <input type="radio" id="refills" name="length" value="refills" checked></input>
+                    <label for="refills"># of Refills</label>
+                    </div>
+                    </div>
                 </div>
                 
 
@@ -112,12 +124,11 @@ export const NewOrders = () => {
                             <td className="last">Daniel-Bair</td>
                             <td className="prod">Plant-Based Canine Dry</td>
                             <td className="length">Unlimited</td>
-                            <td className="dvm">Dr. Milosevic, Mel</td>
+                            <td className="dvm">Dr. Milley, Catherine</td>
                             <td className="approve">
-                                <a href="/"><i className="far fa-thumbs-up fa-2x"></i></a>
-                                <a href="/"><i className="far fa-thumbs-down fa-2x"></i></a>
-                                <button onClick={toggleModal} type="button"><i className="fas fa-edit fa-2x"></i></button>
-                                {/* <a href="/"><i className="fas fa-edit fa-2x"></i></a> */}
+                                <button id="editbutton" href="/"><i className="far fa-thumbs-up fa-2x"></i></button>
+                                <button id="editbutton" href="/"><i className="far fa-thumbs-down fa-2x"></i></button>
+                                <button id="editbutton" onClick={toggleModal} type="button"><i className="fas fa-edit fa-2x"></i></button>
                             </td>
                         </tr>
 
@@ -127,11 +138,11 @@ export const NewOrders = () => {
                             <td className="last">Daniel-Bair</td>
                             <td className="prod">Growth/Senitive GI Canine Dry, Growth/Sensitive GI Canine Chunky Stew</td>
                             <td className="length">Unlimited</td>
-                            <td className="dvm">Dr. Milosevic, Mel</td>
+                            <td className="dvm">Dr. Milley, Catherine</td>
                             <td className="approve">
-                                <a href="/"><i className="far fa-thumbs-up fa-2x"></i></a>
-                                <a href="/"><i className="far fa-thumbs-down fa-2x"></i></a>
-                                <a href="/"><i className="fas fa-edit fa-2x"></i></a>
+                            <button id="editbutton" href="/"><i className="far fa-thumbs-up fa-2x"></i></button>
+                                <button id="editbutton" href="/"><i className="far fa-thumbs-down fa-2x"></i></button>
+                                <button id="editbutton" onClick={toggleModal} type="button"><i className="fas fa-edit fa-2x"></i></button>
                             </td>
                         </tr>
 
@@ -141,11 +152,11 @@ export const NewOrders = () => {
                             <td className="last">Daniel-Bair</td>
                             <td className="prod">Rabbit-MAINT Feline Chunky Stew, Rabbit S.I.T. Jerky Treats</td>
                             <td className="length">1 Year</td>
-                            <td className="dvm">Dr. Milosevic, Mel</td>
+                            <td className="dvm">Dr. Milley, Catherine</td>
                             <td className="approve">
-                                <a href="/"><i className="far fa-thumbs-up fa-2x"></i></a>
-                                <a href="/"><i className="far fa-thumbs-down fa-2x"></i></a>
-                                <a href="/"><i className="fas fa-edit fa-2x"></i></a>
+                            <button id="editbutton" href="/"><i className="far fa-thumbs-up fa-2x"></i></button>
+                                <button id="editbutton" href="/"><i className="far fa-thumbs-down fa-2x"></i></button>
+                                <button id="editbutton" onClick={toggleModal} type="button"><i className="fas fa-edit fa-2x"></i></button>
                             </td>
                         </tr>
 
@@ -155,11 +166,11 @@ export const NewOrders = () => {
                             <td className="last">Daniel-Bair</td>
                             <td className="prod">Rabbit-MAINT Feline Chunky Stew, Rabbit S.I.T. Jerky Treats</td>
                             <td className="length">Unlimited</td>
-                            <td className="dvm">Dr. Milosevic, Mel</td>
+                            <td className="dvm">Dr. Milley, Catherine</td>
                             <td className="approve">
-                                <a href="/"><i className="far fa-thumbs-up fa-2x"></i></a>
-                                <a href="/"><i className="far fa-thumbs-down fa-2x"></i></a>
-                                <a href="/"><i className="fas fa-edit fa-2x"></i></a>
+                            <button id="editbutton" href="/"><i className="far fa-thumbs-up fa-2x"></i></button>
+                                <button id="editbutton" href="/"><i className="far fa-thumbs-down fa-2x"></i></button>
+                                <button id="editbutton" onClick={toggleModal} type="button"><i className="fas fa-edit fa-2x"></i></button>
                             </td>
                         </tr>
                     </tbody>

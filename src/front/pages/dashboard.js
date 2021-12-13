@@ -19,7 +19,7 @@ export const Dashboard = () => {
                 </div>
                 <div className="nav">
                     <a href="/">HOME</a>
-                    <a href="/">NEW Rx</a>
+                    <a href="/newrx">NEW Rx</a>
                     <a href="/">CLIENTS</a>
                     <a href="/">SETTINGS</a>
                     <a href="/">LOG OUT</a>

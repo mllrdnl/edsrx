@@ -1,11 +1,27 @@
 import React, { useState, useEffect, useContext } from 'react';
+import Select from "react-dropdown-select";
 import Catdoglogo from '../../../src/dogcatlogo.png';
 import { CanineProduct } from '../components/CanineProduct';
 
 import '../styles/newRx.css';
 
 export const NewRx = () => {
+    const dvms = [
+        {
+        value:"milley",
+        label:"Milley"
+        }, 
+        {
+        value:"bourgeois",
+        label:"Bourgeois"
+        },
+        {
+        value:"tully",
+        label:"Tully"
+        },        
+    ]
 
+    const [value, setValue] = useState("");
 
     return (
         <div className="newRxcontainer">
@@ -24,9 +40,9 @@ export const NewRx = () => {
             </div>
 
             <div className="newRxbody">
-                <h3>New Diet Recommendation</h3>
+                <h3>New Diet Recommendation - ADC Portland</h3>
                 <div className="client_info">
-                    <h4>CLIENT & PET INFO</h4>
+                    <h4><strong>Client & Pet Info</strong></h4>
 
                     <div className="labelnfield">
                     <label>First Name</label>
@@ -57,14 +73,19 @@ export const NewRx = () => {
                     <input type="radio" id="canine" name="species" value="canine" checked></input>
                     <label for="canine">Canine</label>
                     
-                    <input type="radio" id="feline" name="species" value="feline" checked></input>
-                    <label for="feline">Feline</label>
+                    <input type="radio" id="feline" name="species" value="feline"></input>
+                    <label for="feline">Feline</label>                   
                 </div>
 
                 </div>
-
                 
+                <div className="dvmfields">
+                    <h4>DVM:</h4>
+                    <Select options={dvms} values={[]} label={dvms.label} onChange={ev => setValue(ev.label)} />
+                    </div>
+
                 <div className="addapet">
+
                     <label for="addpet">Add another pet?</label>
                     <input type="checkbox" id="addpet" name="addpet"></input>
                 </div>
